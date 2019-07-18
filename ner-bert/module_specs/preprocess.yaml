@@ -2,6 +2,7 @@ name: NER Preprocess
 id: 90393344-7e12-4179-927d-2d318cf416cb
 category: Machine Learning\Preprocess
 description: NER Preprocess module
+owner: Jincheng Chen
 inputs:
 - name: Input data
   type: TabularDataFolder
