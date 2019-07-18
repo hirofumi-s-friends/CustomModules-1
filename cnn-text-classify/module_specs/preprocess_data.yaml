@@ -2,6 +2,7 @@ name: TextCNN Word to Id
 id: 89b03051-b9d1-4a79-8c8c-f627290b875a
 category: Machine Learning\Preprocess
 description: Transform Word to Id
+owner: Si Chen
 inputs:
 - name: Input vocab
   type: GenericFolder
