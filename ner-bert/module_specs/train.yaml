@@ -2,6 +2,7 @@ name: NER Train
 id: 35ff6570-c9af-4304-a57a-2b63ba216396
 category: Machine Learning\Train
 description: NER train module
+owner: Jincheng Chen
 inputs:
 - name: Input train data
   type: TabularDataFolder
