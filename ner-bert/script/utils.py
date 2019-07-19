@@ -16,10 +16,12 @@ def serialize_result(raw_text_list, y_list):
         entities = get_entities(y)
         result = []
         for e in entities:
+            entity_label = e[0]
+            if entity_label not in set(['PER', 'ORG', 'LOC', 'MISC']):
+                continue           
             start_index = e[1]
             end_index = e[2] + 1
             entity_name = ' '.join(text_list[start_index: end_index])
-            entity_label = e[0]
             result.append(tuple((entity_name, entity_label)))
         result_dict = {name: {"tag": label} for (name, label) in result}
         # result_json = json.dumps({name: {"tag": label} for (name, label) in result})
